@@ -8,8 +8,8 @@ export const ServicesBenefits = () => {
     <div className="flex sm:flex-col w-full items-center px-6">
       <div className={`${styles.main} sm:py-4 lg:py-4`}>
         <div className={`${styles.container}`}>
-          <div className={`${styles.text} sm:px-4 lg:px-4`}>
-            <h2 className={`${styles.heading} font-brfirma  md:text-4xl  font-medium leading-tight text-left mb-4`}>
+          <div className={`${styles.text} sm:px-4 lg:px-4 px-0`}>
+            <h2 className={`${styles.heading} font-brfirma  md:text-4xl  font-medium leading-tight text-left mb-4 sm:mt-0 lg:mt-0 mt-6`}>
               <span className="text-red-600">Benefits</span> of forming a
               company on the UAE mainland
             </h2>

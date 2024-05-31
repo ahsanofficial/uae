@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Avatar, Box, Button, Grid, IconButton, Typography, useMediaQuery } from '@mui/material';
 import React, { useState } from 'react';
 import image1 from '../../../public/home/experts/imgae1.jpeg';
@@ -15,18 +15,23 @@ interface Expert {
 const expert = [
     {
         id: 1,
-        name: "Name",
+        name: "1",
         avatarUrl: image1.src,
     },
     {
         id: 2,
-        name: "Name",
+        name: "2",
         avatarUrl: image2.src,
     },
     {
         id: 3,
-        name: "Name",
+        name: "3",
         avatarUrl: image3.src,
+    },
+    {
+        id: 4,
+        name: "4",
+        avatarUrl: image2.src,
     },
 ];
 
@@ -37,11 +42,11 @@ const Experts = () => {
     const totalPages = Math.ceil(expert.length / expertPerPage);
 
     const nextTestimonial = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % totalPages);
+        setCurrentIndex(prevIndex => Math.min(prevIndex + 1, totalPages - 1));
     };
 
     const prevTestimonial = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + totalPages) % totalPages);
+        setCurrentIndex(prevIndex => Math.max(prevIndex - 1, 0));
     };
 
     const truncateText = (text: string, maxWords: number): string => {
@@ -63,20 +68,18 @@ const Experts = () => {
                 </Grid>
                 <Grid item xs={12} sm={8} className=' border border-lime-700 mt-10 rounded-2xl'>
                     <Box style={{ display: 'flex', alignItems: 'center', gap: '16px', overflowX: 'auto' }}>
-                        <IconButton onClick={prevTestimonial} style={{ marginRight: 'auto' }}>
+                        <IconButton onClick={prevTestimonial} style={{ marginRight: 'auto' }} disabled={currentIndex === 0}>
                             <NavigateBeforeIcon />
                         </IconButton>
-                        {expert
-                            .slice(currentIndex * expertPerPage, (currentIndex + 1) * expertPerPage)
-                            .map((experts) => (
-                                <Box key={experts.id} style={{ width: '320px', height: '100%', maxWidth: isDesktop ? '350px' : '100%', display: 'flex', flexDirection: 'column', marginBottom: '16px', padding: '16px', borderRadius: '20px' }}>
-                                    <Avatar alt={experts.name} src={experts.avatarUrl} style={{ width: 'auto', height: '130px' }} />
-                                    <Typography variant="subtitle1" className='sm:text-2xl text-2xl text-center mt-6'>
-                                        - {experts.name}
-                                    </Typography>
-                                </Box>
-                            ))}
-                        <IconButton onClick={nextTestimonial} style={{ marginLeft: 'auto' }}>
+                        {expert.slice(currentIndex, currentIndex + expertPerPage).map((experts) => (
+                            <Box key={experts.id} style={{ width: '320px', height: '100%', maxWidth: isDesktop ? '350px' : '100%', display: 'flex', flexDirection: 'column', marginBottom: '16px', padding: '16px', borderRadius: '20px' }}>
+                                <Avatar alt={experts.name} src={experts.avatarUrl} style={{ width: 'auto', height: '130px' }} />
+                                <Typography variant="subtitle1" className='sm:text-2xl text-2xl text-center mt-6'>
+                                    - {experts.name}
+                                </Typography>
+                            </Box>
+                        ))}
+                        <IconButton onClick={nextTestimonial} style={{ marginLeft: 'auto' }} disabled={currentIndex + expertPerPage >= expert.length}>
                             <NavigateNextIcon />
                         </IconButton>
                     </Box>
@@ -87,4 +90,3 @@ const Experts = () => {
 };
 
 export default Experts;
-
