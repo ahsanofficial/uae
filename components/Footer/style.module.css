@@ -1,0 +1,142 @@
+/* style.module.css */
+.bg {
+  background-color: #03111c;
+  border-bottom: 10px solid #ff0000;
+}
+
+.info {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: end;
+  width: min-content;
+}
+
+.logo {
+  place-items: inherit;
+  text-align: end;
+}
+
+.address {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  text-align: start;
+  color: #c5c5c5;
+  width: 265px;
+  height: 72px;
+}
+
+.store {
+  width: 139.23px;
+  height: 30px;
+  padding: 21px 10px 21px 10px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.country {
+  width: 264px;
+  height: 38px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 15px 7px 15px;
+  background: transparent;
+  border: 1px solid #244ba8;
+  margin-top: 20px;
+}
+.red {
+  color: #FF0000;
+}
+.bg_red {
+  background-color: #FF0000;
+}
+
+
+.footer_head {
+  text-align: left;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+  color:#FF0000;
+}
+.formContainer {
+  padding: 50px;
+}
+.Terms {
+  width: 40%;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 640px) {
+  .bg {
+    padding: 25px 20px 20px 25px;
+  }
+  .flex {
+    flex-direction: column; 
+    gap: 0px;
+  }
+
+  .info {
+    width: 100%;
+    justify-content: center; /* Center align the info section */
+  }
+
+  .store,
+  .country {
+    width: 100%; /* Set width to 100% for full width on mobile */
+    margin-top: 10px; /* Adjust margin for better spacing */
+  }
+
+  .Terms {
+    width: 80%; /* Adjust width for better mobile view */
+    margin: 20px auto; /* Center and add margin for better spacing */
+  }
+
+  .logo {
+    text-align: center; /* Center align logo */
+  }
+
+
+  .footer_head {
+  font-size: 35px;
+    color: #FF0000;
+    text-align: left;
+    line-height: 50px;
+  }
+  .container {
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .learn {
+    width: 100%;
+
+  }
+  .form {
+    width: 100%;
+  }
+  .footer_main {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .flex {
+    gap: 0px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .country {
+    gap: 8px;
+  }
+  .address {
+    text-align: justify;
+  }
+}

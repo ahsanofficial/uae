@@ -1,0 +1,34 @@
+.bg {
+    width: 90%;
+    margin: auto;
+}
+
+.redius {
+    border-radius: 50% !important;
+}
+
+.flex {
+    background-image: linear-gradient(to right, #50D5B7, #067D68);
+}
+.midSlider{
+    height: 230px !important;
+    width: auto;
+}
+.img {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 40px;
+}
+@media (min-width: 300px) and (max-width: 450px) {
+    .img {
+        margin: auto !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    .midSlider{
+        height: auto;
+        width: auto;
+    }
+}

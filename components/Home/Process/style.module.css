@@ -1,0 +1,46 @@
+.Backgound {
+    background-image: url('../../../public/home/process/image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 455px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 100px blue;
+    top: 23px;
+    position: relative;
+}
+
+.text {
+    padding: 10px 10px;
+    margin-right: 2px;
+}
+
+.card {
+    width: 550px !important;
+    position: relative;
+    top: 10%;
+    /* left: 35%; */
+    margin: auto;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    .card {
+        width: auto !important;
+        position: static;
+        height: auto;
+    }
+
+    .Backgound {
+        width: 95%;
+        margin: auto;
+        background-image: none;
+        background-color: #E8FFFA;
+        height: 100%;
+    }
+
+    .text {
+        width: 90% !important;
+        margin-left: 20px;
+        margin-top: 15px !important;
+    }
+}

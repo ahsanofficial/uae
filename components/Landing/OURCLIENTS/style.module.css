@@ -1,0 +1,14 @@
+.image{
+    width: 200px;
+    height: auto;
+    align-items: center;
+}
+.bg{
+    width: 80%;
+    margin: auto;
+}
+.midSlider{
+    width: auto;
+    height: 290px !important;
+    background-color: aqua;
+}

@@ -1,0 +1,32 @@
+.blue_heading {
+    width: 30%;
+}
+
+.para {
+    max-width: 999px;
+}
+
+.id {
+    margin-right: 120px;
+}
+
+
+.arrow {
+    height: min-content;
+    padding-top: 0px;
+    /* width: 1%; */
+}
+
+@media (min-width: 300px) and (max-width: 475px) {
+    .blue_heading {
+        width: 100%;
+       
+    }
+    .arrow {
+        display: none;
+    }
+
+    .extraPara {
+        margin-bottom: -44px;
+    }
+}

@@ -1,0 +1,26 @@
+.back {
+    background-image: url(../../../public/landing/whychoose/background.jpg);
+    height: auto !important;
+    width: auto !important;
+    object-fit: cover !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 620px !important; 
+}
+
+.response {
+    width: 80%;
+    margin: auto;
+}
+
+.img{
+    width: 250px;
+    height: auto;
+    margin-top: 25px !important;
+}
+@media (min-width: 300px) and (max-width: 450px) {
+.back{
+    height: 100% !important;
+}
+}

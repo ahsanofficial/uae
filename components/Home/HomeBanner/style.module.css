@@ -1,0 +1,44 @@
+.Backgound {
+    background-image: url('../../../public/home/homebanner/UAE.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 100px blue;
+    top: 23px;
+    position: relative;
+}
+.border{
+    border-radius: 20px;
+    border: 1px solid white;
+}
+.bg {
+    width: 60%;
+    margin: auto;
+}
+
+.button {
+    display: none;
+}
+
+.text {
+    display: grid !important;
+    place-items: end !important;
+}
+
+@media (min-width: 350px) and (max-width: 500px) {
+    .center {
+        height: auto;
+    }
+
+    .bg {
+        width: 90%;
+    }
+    .button{
+        display: block;
+    }
+    .btn{
+        display: none;
+    }
+}

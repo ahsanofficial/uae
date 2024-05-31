@@ -1,0 +1,40 @@
+@media (min-width: 300px) and (max-width: 475px) {
+  .main {
+    margin-top: 5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 2rem;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 0;
+    
+  }
+
+  .boxIn {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 21px 20px 8px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+
+  .text {
+    width: 100%;
+    order: 2;
+
+  }
+  .icon {
+    width: 30%;
+    order: 1;
+  }
+}
+.boxIn {
+
+  border: 1px solid rgb(77, 77, 77);
+  border-radius: 20px;
+}

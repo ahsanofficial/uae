@@ -1,0 +1,11 @@
+.bg{
+    width: 80%;
+    margin: auto;
+
+}
+@media (min-width: 300px) and (max-width: 450px) {
+    .bg {
+      margin-top: 500px;
+      /* text-align: center; */
+    }
+  }

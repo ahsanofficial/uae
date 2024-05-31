@@ -1,0 +1,38 @@
+.bg {
+    width: 80%;
+    margin: auto;
+}
+
+.width {
+    /* width: auto; */
+    /* height: 500px; */
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.desktop {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.price {
+    width: 300px !important;
+    margin: auto;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .flex {
+        display: block;
+    }
+    .price{
+        width: 270px !important;
+        margin: auto;
+    }
+}
+
+.bgWhite {
+    background-color: white !important;
+}

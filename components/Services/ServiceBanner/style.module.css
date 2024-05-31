@@ -1,0 +1,105 @@
+
+.Backgound {
+
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../public//services/servicesbanner/Rectangle\ 182.png");
+  /* padding: 20px; */
+}
+  .gray {
+    color: #006452;
+
+  }
+
+  .border {
+    border-left:  4px solid #006452;
+  }
+
+  .Backgound::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    width: auto;
+    background-image: url("../../../public//services/servicesbanner/Rectangle\ 182.png");
+  }
+
+
+
+.textContainer {
+ 
+
+ 
+ 
+ 
+}
+
+.formContainer {
+  padding: 20px;
+
+  margin-right: 20px;
+}
+
+.margin {
+  margin-top: 30px;
+  height: 80%;
+  @media (max-width: 425px) {
+    width: 337px;
+  }
+}
+.image {
+  width: auto;
+  height: 30px;
+}
+
+@media (min-width: 300px) and (max-width: 475px) {
+ 
+  .heading-lg {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .heading-xl {
+    font-size: 2rem; 
+    margin-top: 1rem;
+  }
+
+  .paragraph-base {
+    font-size: 0.875rem; 
+    margin-top: 0.75rem; 
+  }
+  .gridItem {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  .gray {
+    font-size: 30px;
+    line-height: 37.71px;
+
+    /* text-align: center; */
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .para {
+    margin-top: 20px;
+  }
+  .Backgound {
+    height: 83vh;
+   
+  }
+  .margin {
+    margin: 0 30px;
+  }
+  
+}

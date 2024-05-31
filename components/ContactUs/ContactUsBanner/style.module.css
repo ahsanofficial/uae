@@ -1,0 +1,19 @@
+.Backgound {
+  background-image: url("../../../public/contactus/Rectangle\ 138.png");
+  height: 520px;
+  object-fit: cover;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.bg{
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.margin{}
+@media (min-width: 300px) and (max-width: 450px) {
+  .Backgound {
+    height: 400px;
+  }
+}

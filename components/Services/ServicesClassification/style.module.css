@@ -1,0 +1,6 @@
+@media (min-width: 300px) and (max-width: 475px) {
+    .image {
+        top: 6rem;
+        left: 9rem;
+    }
+}

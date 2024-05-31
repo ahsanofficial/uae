@@ -1,0 +1,51 @@
+.container {
+  padding: 1rem;
+  background-color: white;
+  width: 95%;
+  margin: auto;
+}
+
+.serial {
+  z-index: 7;
+  border-radius: 99999px;
+  border: 1px solid lightgray;
+  padding: 4px 13px 4px 13px;
+  /* position: relative; */
+  background-color: rgb(255, 251, 251);
+}
+
+.points {
+  border-radius: 16px;
+  padding: 5px 0;
+  z-index: 6;
+  text-align: center;
+  border: 1px solid gray;
+  width: 242px;
+  height: 38px;
+  margin-left: 10px;
+}
+
+.points_container {
+  margin-top: 42px;
+  margin-left: 220px;
+
+}
+
+.img2 {
+  display: none;
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+  .img {
+    display: none;
+    margin-left: 0px;
+  }
+
+  .img2 {
+    display: block;
+  }
+
+  .points_container {
+    margin-left: 0px !important;
+  }
+}

@@ -1,0 +1,19 @@
+.Backgound {
+  width: 80%;
+  margin: auto;
+}
+
+.img {
+  height: auto;
+  width: 230px;
+  border: 9px !important;
+}
+.dot{
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .img{
+    width: auto;
+  }
+}
